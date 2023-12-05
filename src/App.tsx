@@ -7,7 +7,7 @@ function App() {
 
 	return (
 		<main>
-			<img src="/logo.png" className="logo" alt="Titulo del juego" />
+			<img src="./logo.png" className="logo" alt="Titulo del juego" />
 			{isPlaying ? (
 				<section className="game">
 					<Board currentBoard={board} />

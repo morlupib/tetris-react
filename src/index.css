@@ -30,6 +30,7 @@ main {
 
 .logo {
 	display: block;
+	aspect-ratio: 391 128;
 	margin: 0 auto 20px;
 }
 
@@ -121,4 +122,29 @@ button {
 
 button:hover {
 	background-color: #502f89;
+}
+
+@media only screen and (max-device-width: 480px) {
+	main {
+		justify-content: start;
+	}
+
+	.logo {
+		width: 250px;
+		margin-top: 10px;
+	}
+	button {
+		font-size: 1.3rem;
+		padding: 8px 16px;
+	}
+	.controls {
+		display: none;
+	}
+
+	.cell {
+		width: 20px;
+		aspect-ratio: 1;
+		border: 1px solid #000000;
+		box-shadow: inset 4px 4px 2px rgba(255, 255, 255, 0.5);
+	}
 }
